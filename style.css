@@ -1,0 +1,254 @@
+/*Font*/
+@font-face {
+    font-family: 'abelregular';
+    src: url('abel-regular-webfont.eot');
+    src: url('abel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('abel-regular-webfont.woff2') format('woff2'),
+         url('abel-regular-webfont.woff') format('woff'),
+         url('abel-regular-webfont.ttf') format('truetype'),
+         url('abel-regular-webfont.svg#abelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'acmeregular';
+    src: url('Acme-Regular-webfont.eot');
+    src: url('Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Acme-Regular-webfont.woff2') format('woff2'),
+         url('Acme-Regular-webfont.woff') format('woff'),
+         url('Acme-Regular-webfont.ttf') format('truetype'),
+         url('Acme-Regular-webfont.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Media queries*/
+@media all and (max-width: 1024px)
+{
+    #mitte{
+        width: auto;
+    }
+    #Banner
+    {
+        display: none;
+    } 
+    nav
+    {
+        width: auto;
+        height: 12rem;
+    }
+    nav ul 
+    {
+        flex-direction: column;
+    } 
+    section 
+    {
+        flex-direction: column;
+    }
+}
+/*Main*/
+#mitte
+{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+.logo
+{
+    font-family: 'acmeregular';
+    text-decoration: none;
+    color: rgb(77, 74, 107);
+    font-size: 30px;
+}
+header
+{
+    /*height: 5rem;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: top 0.5s;
+    width: 100%;
+    background-color: #fff;
+}
+#slogan
+{
+    margin-top: 0;
+    padding-left: 80px;
+    font-family: 'abelregular';
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li
+{
+    margin: 10px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: rgb(70, 59, 59);
+    font-family: 'abelregular';
+}
+header
+{
+    border-bottom: 4px solid rgb(133, 50, 172);
+}
+
+/*Banner*/
+#Banner
+{
+    margin-bottom: 15px;
+    background-image: url("Bilder/BannerBild.jpg");
+    height: 14rem;
+    box-shadow: 6px 6px rgb(19, 18, 18);
+}
+.BannerBeschreibung
+{  
+    margin-top: 140px;
+    color: white;
+    background-color: rgb(14, 4, 4);
+    opacity: 0.6;
+}
+.BannerBeschreibung h3
+{
+    font-size: 30px;
+    margin-left: 90px;
+}
+.BannerBeschreibung p
+{
+    font-size: 17px;
+    margin-left: 90px;
+}
+
+/*Section*/
+section
+{
+    margin-top: 4rem;
+    display: flex;
+    height: 45rem;
+}
+aside{
+    width: 1400px;
+}
+aside a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 4px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+aside a:hover, .buttonPartner:hover
+{
+    transform: scale(1.5);
+}
+.buttonPartner
+{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 17px; 
+    margin-left: 17rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;  
+}
+.cookie .daten{
+    color: rgb(39, 36, 36);
+}
+.cookie .buttoncookieeinstellen
+{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 4px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cookie .buttoncookieakzeptieren
+{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 4px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mesdeuxboutons
+{
+    display: block;
+    margin-left: 14rem;
+
+}
+.kontakt
+{
+    background-color:  #4CAF50;
+    height: 9rem;
+    display: flex;
+    padding: 1rem 2rem;
+}
+.kontakt a
+{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+}
+.kontakt tel{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.mail
+{
+    position: relative;
+    margin: 15px;
+    padding-left: 400px;
+}
+.tel
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
